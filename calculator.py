@@ -20,3 +20,7 @@ def sqrt(x):
         return "Cannot calculate square root of a negative number"
     return math.sqrt(x)
 
+
+def cube(x):
+    return x * x * x
+

@@ -1,5 +1,5 @@
 import unittest
-from calculator import add, subtract, multiply, divide, sqrt
+from calculator import add, subtract, multiply, divide, sqrt, cube
 
 class TestCalculator(unittest.TestCase):
 
@@ -73,6 +73,19 @@ class TestCalculator(unittest.TestCase):
 
     def test_sqrt_negative(self):
         self.assertEqual(sqrt(-4), "Cannot calculate square root of a negative number")
+
+
+
+
+
+    def test_cube_positive(self):
+        self.assertEqual(cube(2), 8)
+
+    def test_cube_negative(self):
+        self.assertEqual(cube(-2), -8)
+
+    def test_cube_zero(self):
+        self.assertEqual(cube(0), 0)
 
 
 if __name__ == '__main__':
